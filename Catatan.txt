@@ -1,0 +1,17 @@
+OOP Javascript Programman Zaman Now
+
+dibuat tanggal 31-03-2022
+
+sampai video menik ke 23
+
+selesai tanggal 
+
+alias graph="git log --all --decorate --oneline --graph"
+
+
+bast practice atau cara penulisan terbaik constructor function
+
+* contoh penulisan
+function ContohPenulisan(){
+
+}
