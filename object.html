@@ -9,23 +9,75 @@
 </head>
 
 <body>
-
+  <h3>OOP JAVASCRIPT</h3>
   <script>
-    function Person() {
-      this.firstName = "";
-      this.lastName = "";
+    // #1 Membuat Object
+    // const panjul = {
+    //   firstName: "PANJUL"
+    // };
+
+    // console.log(panjul)
+
+
+    // // #2 Property di Constructor Function
+    // function Person() {
+    //   this.firstName = "";
+    //   this.lastName = "";
+    // }
+
+    // const hry = new Person();
+    // hry.firstName = "Hari";
+    // // hry.lastName = "Santoso";
+
+    // const santoso = new Person();
+    // // santoso.firstName = "Santoso";
+    // // santoso.lastName = "Raya";
+
+    // console.log(hry)
+    // console.log(santoso)
+
+    // // #3 Method di Constructor Function 
+    // function Person() {
+    //   this.firstName = ""
+    //   this.lastName = ""
+    //   this.sayHello = function (name) {
+    //     console.info(`Hello ${name}, my name is ${this.firstName}`)
+    //   }
+    // }
+
+    // const hry = new Person()
+    // hry.firstName = "Hari"
+    // hry.lastName = "Santoso"
+    // hry.sayHello("Panjul")
+
+    // console.log(hry)
+
+    // // #4 Parameter di Constructor Function 
+    // function Person(firstName, lastName) {
+    //   this.firstName = "Hari"
+    //   this.lastName = 'Santoso'
+    //   this.sayHello = function (name) {
+    //     console.info(`Mobil ${name}, pemiliknya ${this.firstName} ${this.lastName}`)
+    //   }
+    // }
+    // // deklarsi
+    // const car = new Person()
+    // car.sayHello("Volkwagen")
+
+    // console.log(car)
+    // #4 Parameter di Constructor Function 
+    function Person(firstName, lastName) {
+      this.firstName = "Hari"
+      this.lastName = 'Santoso'
+      this.sayHello = function (name) {
+        console.info(`Mobil ${name}, pemiliknya ${this.firstName} ${this.lastName}`)
+      }
     }
+    // deklarsi
+    const car = new Person()
+    car.sayHello("Volkwagen")
 
-    const hry = new Person();
-    hry.firstName = "Hari";
-    hry.lastName = "Santoso";
-
-    const santoso = new Person();
-    santoso.firstName = "Santoso";
-    santoso.lastName = "Raya";
-
-    console.log(hry)
-    console.log(santoso)
+    console.log(car)
   </script>
 
 </body>
