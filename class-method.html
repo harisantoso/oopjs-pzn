@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OOP JAVASCRIPT</title>
+</head>
+
+<body>
+  <h3>CLASS METHOD</h3>
+
+  <script>
+    class Person {
+      constructor(nama) {
+        this.nama = nama;
+        // #1 bisa dengan ini
+        // this.sayHello = function (nama) {
+        //   console.info(`Hello ${nama}, my name is ${this.nama}`)
+        // }
+      }
+
+      // #2 atau dengan ini
+      sayHello(nama) {
+        console.info(`Hi ${nama}, my name is ${this.nama}`);
+      }
+    }
+
+    const hry = new Person("Hari");
+    console.info(hry);
+    hry.sayHello('winda');
+    // cetak 
+    console.info(hry.nama);
+
+
+    const san = new Person("Santoso");
+    console.info(san);
+  </script>
+
+</body>
+
+</html>
