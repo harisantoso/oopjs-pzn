@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OOP JAVASCRIPT</title>
+</head>
+
+<body>
+  <h3>CLASS INHERITANCE</h3>
+
+  <script>
+    class Employee {
+      // constructor(name) {
+      //   this.name = name;
+      // }
+
+      sayHello(name) {
+        console.log(`Halo ${name}, nama saya ${this.name} saya adalah Employe`)
+      }
+    }
+
+    class Manager extends Employee {
+
+      sayHello(name) {
+        console.log(`Halo ${name}, nama saya ${this.name} saya adalah Manager`)
+      }
+    }
+
+    const winda = new Employee();
+    winda.name = "Winda";
+    winda.sayHello("Cantik");
+
+    const hari = new Manager();
+    hari.name = "Hari Santoso";
+    hari.sayHello("Broo!");
+
+    console.info(winda)
+    console.info(hari)
+  </script>
+
+</body>
+
+</html>

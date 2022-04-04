@@ -6,9 +6,6 @@ sampai video menik ke 1.15 menit
 
 selesai tanggal 
 
-alias graph="git log --all --decorate --oneline --graph"
-
-
 bast practice atau cara penulisan terbaik constructor function
 
 * contoh penulisan
