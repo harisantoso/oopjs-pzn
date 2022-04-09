@@ -25,10 +25,32 @@
     console.info(typeof hari);
     console.info(typeof santoso);
 
-    console.info(hari instanceof Employee);
-    console.info(hari instanceof Manager);
-    console.info(santoso instanceof Employee);
-    console.info(santoso instanceof Manager);
+    console.info(hari instanceof Employee); // true
+    console.info(hari instanceof Manager); // false
+
+    console.info(santoso instanceof Employee); // false
+    console.info(santoso instanceof Manager); // true
+
+    // ======= pada inheritance =======
+
+    class Pegawai {
+
+    }
+    class Manajer extends Pegawai {
+
+    }
+
+    const winda = new Pegawai();
+    const indria = new Manajer();
+
+    console.info(typeof winda);
+    console.info(typeof indria);
+
+    console.info(winda instanceof Pegawai); // true
+    console.info(winda instanceof Manajer); // false
+
+    console.info(indria instanceof Pegawai); // true
+    console.info(indria instanceof Manajer); // true
   </script>
 
 </body>
