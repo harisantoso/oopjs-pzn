@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LATIHAN CLASS OOP</title>
+</head>
+
+<body>
+  <h3>CLASS SUPER METHOD</h3>
+
+  <script>
+    class Bentuk {
+      gambar() {
+        console.info("Bentuk Gambar");
+      }
+    }
+
+    class Bulat extends Bentuk {
+      gambar() {
+        super.gambar();
+        console.info("Gambar Bulat");
+      }
+    }
+
+    const bulat = new Bulat();
+    bulat.gambar();
+  </script>
+
+</body>
+
+</html>

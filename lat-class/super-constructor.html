@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LATIHAN CLASS OOP</title>
+</head>
+
+<body>
+  <h3>SUPER CONSTRUCTOR</h3>
+
+  <script>
+    class kariawan {
+      constructor(namaDepan) {
+        this.namaDepan = namaDepan;
+      }
+
+      perkenalkanNama(nama) {
+        console.info(`Perknalkan ${nama}, ${this.namaDepan} saya kariawan`);
+      }
+    }
+
+    class Manajer extends kariawan {
+
+      constructor(namaDepan, namaBelakang) {
+        super(namaDepan);
+        this.namaBelakang = namaBelakang;
+      }
+
+      perkenalkanNama(nama) {
+        console.info(`Perknalkan ${nama}, ${this.namaDepan} ${this.namaBelakang} saya Manager`);
+      }
+    }
+
+    const hr = new kariawan("Santoso");
+    hr.perkenalkanNama("Boss");
+
+    const wd = new Manajer("Winda", "Indria");
+    wd.perkenalkanNama("Pak");
+
+    console.info(hr);
+    console.info(wd);
+  </script>
+
+</body>
+
+</html>

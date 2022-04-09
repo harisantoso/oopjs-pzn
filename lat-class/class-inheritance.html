@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LATIHAN CLASS OOP</title>
+</head>
+
+<body>
+  <h3>CLASS INHERITANCE</h3>
+
+  <script>
+    class Kendaraan {
+
+      sayHai(nama) {
+        console.info(`Hai ${nama}, Pemilik kendaraan ${this.nama}`);
+      }
+    }
+
+    class Mobil extends Kendaraan {
+
+      sayHai(nama) {
+        console.info(`Hai ${nama}, Pemilik mobil ${this.nama}`);
+      }
+    }
+
+    const vw = new Kendaraan();
+    vw.nama = "Polo";
+    vw.sayHai("Hari");
+    console.info(vw);
+
+    const bmw = new Mobil();
+    bmw.nama = "M3";
+    bmw.sayHai("Winda");
+    console.info(bmw);
+  </script>
+
+</body>
+
+</html>

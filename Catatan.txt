@@ -2,7 +2,7 @@ OOP Javascript Programman Zaman Now
 
 dibuat tanggal 31-03-2022
 
-sampai video menik ke 1.15 menit
+sampai video menik ke 1.49 menit
 
 selesai tanggal 
 
@@ -12,3 +12,31 @@ bast practice atau cara penulisan terbaik constructor function
 function ContohPenulisan(){
 
 }
+
+* masalah penulisan pad vscode!!!
+CLASS PRIVATE dan CLASS PRIVATE METHOD
+
+CLASS PRIVATE FIELD 
+
+ class Nilai {
+  #nilai = 3; // tidak bisa menggunakan # pada counter = 0:
+  increment() {
+    this.#counter++;
+}
+
+const.tambah = new Nilai()
+tambah.nilai = 5 // 3 tidak bisa diubah
+
+=== berbeda dengan ===
+CLASS PRIVATE FIELD
+
+ class Nilai {
+  nilai = 3; // tidak bisa menggunakan # pada counter = 0:
+  increment() {
+    this.counter++;
+}
+
+const.tambah = new Nilai()
+tambah.nilai = 5 // 8 bisa diubah
+
+

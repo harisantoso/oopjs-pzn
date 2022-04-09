@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LATIHAN CLASS OOP</title>
+</head>
+
+<body>
+  <h3>CLASS METHOD</h3>
+
+  <script>
+    class Mobil {
+      constructor(nama) {
+        this.nama = nama;
+      }
+
+      sayHai(nama) {
+        // Hai Hari, Pemilik Mobil Hari
+        // console.info(`Hai ${nama}, Pemilik Mobil ${nama}`);
+        // Hai Hari, Pemilik Mobil Volkswagen
+        console.info(`Hai ${nama}, Pemilik mobil ${this.nama}`);
+      }
+    }
+
+    const vw = new Mobil("Volkswagen");
+    console.info(vw);
+    vw.sayHai("Hari");
+
+
+    // tidak direkomendaiskan penulisan seperti ini
+    class Kendaraan {
+      constructor(nama) {
+        this.nama = nama;
+        this.sayHai = function (nama) {
+          console.info(`Hai ${nama}, Pemilik Kendaraan ${this.nama}`);
+        }
+      }
+    }
+
+    const bmw = new Kendaraan("BMW");
+    console.info(bmw);
+    bmw.sayHai("Winda");
+    // ===================================================
+  </script>
+
+</body>
+
+</html>

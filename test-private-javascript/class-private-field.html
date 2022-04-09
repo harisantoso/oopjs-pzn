@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		class Nilai {
+
+			#nilai = 0;
+
+			increment() {
+				this.#nilai++;
+			}
+
+			decrement() {
+				this.#nilai--;
+			}
+
+			get() {
+				return this.#nilai;
+			}
+
+		}
+
+		const hitung = new Nilai();
+
+		hitung.increment();
+		hitung.increment();
+		hitung.increment();
+
+		console.info(hitung.get());
+
+		hitung.nilai = 10;
+		hitung.#nilai = 10; // error karena lilai private tidak bisa d
+
+
+		console.info(hitung);
+	</script>
+
+</body>
+
+</html>
