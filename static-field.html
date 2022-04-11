@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OOP JAVASCRIPT</title>
+</head>
+
+<body>
+  <h3>STATIC FIELD</h3>
+
+  <script>
+    class Configuration {
+      nama = "Belajar Javascript OOP";
+      versi = 1.0;
+      penulis = "Hari Santoso";
+    }
+
+    class Pengaturan {
+      static name = "Belajar JS OOP";
+      static version = 0.1;
+      static author = "Hry";
+    }
+
+    const config = new Configuration();
+    console.info(config);
+    console.info(config.nama);
+    // console.info(Configuration.nama);
+
+    const atur = new Pengaturan();
+    console.info(atur);
+    console.info(atur.name);
+
+    Pengaturan.author = "Panjul";
+
+    console.info(Pengaturan.name);
+    console.info(Pengaturan.version);
+    console.info(Pengaturan.author);
+  </script>
+
+</body>
+
+</html>
