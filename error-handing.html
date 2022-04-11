@@ -9,17 +9,13 @@
 </head>
 
 <body>
-  <h3>ERROR</h3>
+  <h3>ERROR HANDLING</h3>
 
   <script>
     class hitungan {
       static hasil(...numbers) {
         if (numbers.length === 0) {
-          throw new Error("total parameter harus lebif dari 0");
-
-          // atau cara basa basi / membuat variable 
-          // const error = new Error("total parameter harus lebif dari 0 ");
-          // throw error;
+          throw new Error("Total Parameter harus lebuh dari 0");
         }
 
         let total = 0;
@@ -30,12 +26,15 @@
       }
     }
 
-    console.info(hitungan.hasil());
-    console.info(hitungan.hasil(1, 1, 1));
+    try {
+      // jika tidak terjadi error isi;co: hasil(1, 1, 1)
+      console.info(hitungan.hasil());
+      console.info("Santoso");
+    } catch (error) {
+      console.info(`Terjadi error: ${error.message}`);
+    }
 
-    // Cara basa basi
-    const result = hitungan.hasil(1, 1, 1, 1, 1);
-    console.info(result);
+    console.info("Hari");
   </script>
 
 </body>
