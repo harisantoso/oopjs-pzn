@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <h3>ERROR HANDLING</h3>
+  <h3>ERROR HANDLING AND FINALLY</h3>
 
   <script>
     class hitungan {
@@ -27,11 +27,12 @@
     }
 
     try {
-      // jika tidak terjadi error isi; co: hasil(1, 1, 1)
-      console.info(hitungan.hasil(2, 2, 2));
+      console.info(hitungan.hasil());
       console.info("Santoso");
     } catch (error) {
       console.info(`Terjadi error: ${error.message}`);
+    } finally {
+      console.info("Program Selesai");
     }
 
     console.info("Hari");
