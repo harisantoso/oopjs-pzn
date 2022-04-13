@@ -1,10 +1,7 @@
 OOP Javascript Programman Zaman Now
 
 dibuat tanggal 31-03-2022
-
-sampai video menik ke 2.20 menit
-
-selesai tanggal 
+selesai tanggal 13-04-2022
 
 bast practice atau cara penulisan terbaik constructor function
 
